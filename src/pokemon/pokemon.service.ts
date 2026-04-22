@@ -5,8 +5,6 @@ import { InjectModel } from '@nestjs/mongoose';
 import { CreatePokemonDto } from './dto/create-pokemon.dto';
 import { UpdatePokemonDto } from './dto/update-pokemon.dto';
 import { Pokemon } from 'pokemon/entities/pokemon.entity';
-import { isUUID, IsUUID } from 'class-validator';
-
 
 @Injectable()
 export class PokemonService {
