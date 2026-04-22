@@ -90,7 +90,7 @@ const {deletedCount} = await this.pokemonModel.deleteOne({_id: id});
       throw new BadRequestException(`Pokemon ya existe en la DB: ${JSON.stringify(error.keyValue)}`);
     }
     console.log(error);
-    throw new InternalServerErrorException(`No se pudo actualizar el Pokemon - Revisa los logs`);
+    throw new InternalServerErrorException(`No se pudo actualizar/Crear el Pokemon - Revisa los logs`);
   
   }
 
